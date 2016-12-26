@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<web-app>
+	<filter>
+    	<filter-name>EncodingFilter</filter-name>
+    	<filter-class>jp.ac.asojobs.asojobs.filter.EncodingFilter</filter-class>
+  	</filter>
+
+	<filter-mapping>
+	    <filter-name>EncodingFilter</filter-name>
+	    <url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+  <servlet>
+  	<servlet-name>CompanyAddChackAction</servlet-name>
+  	<servlet-class>jp.ac.asojobs.asojobs.action.CompanyAddChackAction</servlet-class>
+  </servlet>
+  	<servlet-mapping>
+  	<servlet-name>CompanyAddChackAction</servlet-name>
+  <url-pattern>/companyaddchack</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CompanyAddAction</servlet-name>
+  	<servlet-class>jp.ac.asojobs.asojobs.action.CompanyAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CompanyAddAction</servlet-name>
+  	<url-pattern>/companyadd</url-pattern>
+  </servlet-mapping>
+</web-app>
